@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/chess_score/static/css/main.15896e8d.chunk.css",
+    "main.js": "/chess_score/static/js/main.4a2e6eb1.chunk.js",
+    "main.js.map": "/chess_score/static/js/main.4a2e6eb1.chunk.js.map",
+    "runtime~main.js": "/chess_score/static/js/runtime~main.52b43ae0.js",
+    "runtime~main.js.map": "/chess_score/static/js/runtime~main.52b43ae0.js.map",
+    "static/css/2.5272414f.chunk.css": "/chess_score/static/css/2.5272414f.chunk.css",
+    "static/js/2.7611ddf2.chunk.js": "/chess_score/static/js/2.7611ddf2.chunk.js",
+    "static/js/2.7611ddf2.chunk.js.map": "/chess_score/static/js/2.7611ddf2.chunk.js.map",
+    "index.html": "/chess_score/index.html",
+    "precache-manifest.b071eb743f8c273f08714750ffd829c9.js": "/chess_score/precache-manifest.b071eb743f8c273f08714750ffd829c9.js",
+    "service-worker.js": "/chess_score/service-worker.js",
+    "static/css/2.5272414f.chunk.css.map": "/chess_score/static/css/2.5272414f.chunk.css.map",
+    "static/css/main.15896e8d.chunk.css.map": "/chess_score/static/css/main.15896e8d.chunk.css.map",
+    "static/media/font-awesome.min.css": "/chess_score/static/media/fontawesome-webfont.fee66e71.woff"
+  }
+}

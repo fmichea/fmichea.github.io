@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/flightsim-tools/static/js/main.e205890f.chunk.js",
-    "main.js.map": "/flightsim-tools/static/js/main.e205890f.chunk.js.map",
+    "main.js": "/flightsim-tools/static/js/main.fa3ef117.chunk.js",
+    "main.js.map": "/flightsim-tools/static/js/main.fa3ef117.chunk.js.map",
     "runtime-main.js": "/flightsim-tools/static/js/runtime-main.62eef086.js",
     "runtime-main.js.map": "/flightsim-tools/static/js/runtime-main.62eef086.js.map",
     "static/css/2.abee3411.chunk.css": "/flightsim-tools/static/css/2.abee3411.chunk.css",
-    "static/js/2.3efed290.chunk.js": "/flightsim-tools/static/js/2.3efed290.chunk.js",
-    "static/js/2.3efed290.chunk.js.map": "/flightsim-tools/static/js/2.3efed290.chunk.js.map",
+    "static/js/2.cb4b3c64.chunk.js": "/flightsim-tools/static/js/2.cb4b3c64.chunk.js",
+    "static/js/2.cb4b3c64.chunk.js.map": "/flightsim-tools/static/js/2.cb4b3c64.chunk.js.map",
     "index.html": "/flightsim-tools/index.html",
     "static/css/2.abee3411.chunk.css.map": "/flightsim-tools/static/css/2.abee3411.chunk.css.map",
-    "static/js/2.3efed290.chunk.js.LICENSE.txt": "/flightsim-tools/static/js/2.3efed290.chunk.js.LICENSE.txt"
+    "static/js/2.cb4b3c64.chunk.js.LICENSE.txt": "/flightsim-tools/static/js/2.cb4b3c64.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.62eef086.js",
     "static/css/2.abee3411.chunk.css",
-    "static/js/2.3efed290.chunk.js",
-    "static/js/main.e205890f.chunk.js"
+    "static/js/2.cb4b3c64.chunk.js",
+    "static/js/main.fa3ef117.chunk.js"
   ]
 }

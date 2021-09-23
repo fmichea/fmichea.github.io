@@ -1,4 +1,4 @@
 Links:
 
-- https://fmichea.github.io/chess_score/
-- https://fmichea.github.io/flightsim-tools/#/
+- [Chess Score Tracking](https://fmichea.github.io/chess_score/)
+- [Flight Simulation Tools](https://fmichea.github.io/flightsim-tools/#/)

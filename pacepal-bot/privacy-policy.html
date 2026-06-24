@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — PacePal Bot</title>
+<meta name="description" content="Privacy Policy for PacePal Bot, a Discord bot that displays live speedruns from therun.gg.">
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #161a21;
+    --ink: #e6e9ef;
+    --muted: #9aa3b2;
+    --line: #262c37;
+    --accent: #36d399;     /* split-green: ahead of pace */
+    --accent-dim: #1f6f54;
+    --mono: "JetBrains Mono", "SF Mono", "Cascadia Code", Consolas, monospace;
+    --sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px 96px; }
+
+  header.hero {
+    border-bottom: 1px solid var(--line);
+    padding: 64px 0 40px;
+    margin-bottom: 8px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+  h1 {
+    font-size: clamp(34px, 6vw, 52px);
+    line-height: 1.05;
+    margin: 0 0 16px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+  }
+  .lede { color: var(--muted); font-size: 17px; max-width: 60ch; margin: 0; text-align: left; }
+
+  .timer {
+    font-family: var(--mono);
+    margin-top: 28px;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 10px 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+  .timer .label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+  .timer .val { font-size: 14px; color: var(--accent); }
+
+  h2 {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 52px 0 4px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  h2 .num {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+  h3 { font-size: 16px; margin: 28px 0 6px; font-weight: 700; }
+
+  p, li { text-align: justify; text-justify: inter-word; hyphens: auto; }
+  p { margin: 14px 0; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-dim); }
+  a:hover { border-bottom-color: var(--accent); }
+  strong { color: var(--ink); font-weight: 700; }
+
+  ul { margin: 14px 0; padding-left: 0; list-style: none; }
+  li {
+    position: relative;
+    padding-left: 26px;
+    margin: 10px 0;
+  }
+  li::before {
+    content: "▸";
+    position: absolute;
+    left: 4px;
+    color: var(--accent);
+    font-size: 12px;
+    top: 2px;
+  }
+
+  .contact-card {
+    margin-top: 18px;
+    padding: 20px 24px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+  }
+  .contact-card .k { font-family: var(--mono); font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    font-family: var(--mono);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .hero > * { animation: rise 0.5s ease both; }
+    .hero .eyebrow { animation-delay: 0.02s; }
+    .hero h1 { animation-delay: 0.06s; }
+    .hero .lede { animation-delay: 0.12s; }
+    .hero .timer { animation-delay: 0.18s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>PacePal Bot</h1>
+    <p class="lede">How PacePal Bot handles data when it watches for mentions, finds Twitch links, and displays live speedruns from therun.gg.</p>
+    <div class="timer">
+      <span class="label">Last updated</span>
+      <span class="val">2026-06-24</span>
+    </div>
+  </header>
+
+  <h2><span class="num">01</span> Introduction</h2>
+  <p>This Privacy Policy explains how <strong>PacePal Bot</strong> ("the Bot", "we", "us") collects, uses, and stores data when you or your Discord server interact with it. The Bot is operated by an individual developer, Franck.</p>
+  <p>PacePal Bot watches for messages in which it is <strong>mentioned</strong>, looks for Twitch links in those messages, and — if the linked Twitch user is tracking a speedrun on <a href="https://therun.gg">therun.gg</a> — displays their live run in a message that the Bot keeps updated. If no tracked run is found, the Bot does nothing further.</p>
+  <p>If you have any questions about this policy or your data, contact us at <a href="mailto:franck+pacepal-bot@michea.dev">franck+pacepal-bot@michea.dev</a>.</p>
+
+  <h2><span class="num">02</span> Data We Collect</h2>
+  <p>PacePal Bot is designed to collect as little data as possible. The data it handles falls into the following categories.</p>
+
+  <h3>Data processed but not stored</h3>
+  <ul>
+    <li><strong>Message content of messages that mention the Bot.</strong> When the Bot is mentioned, it reads that message to find Twitch links. The Bot does <strong>not</strong> use Discord's Message Content privileged intent; it only receives the content of messages in which it is explicitly mentioned. This content is processed in memory to extract links and is then discarded. It is not stored long term. Message content may appear briefly in temporary operational/debug logs, which are short-lived and not retained.</li>
+  </ul>
+
+  <h3>Data stored persistently</h3>
+  <ul>
+    <li><strong>Twitch / therun.gg username</strong> — the public Twitch username taken from a link. It is stored to hold per-runner configuration (including customized display configuration for that runner) and to keep track of runs in progress, so that an active run can be resumed after the Bot restarts.</li>
+    <li><strong>therun.gg split file name</strong> — the identifier of the run/splits associated with a runner, stored as part of that runner's configuration.</li>
+    <li><strong>Server and display configuration</strong> — settings provided by Discord users and server administrators that control how the Bot operates and how runs are displayed (for example, which channel to post in and display preferences). This configuration may include Discord identifiers (such as server and channel IDs) necessary for the Bot to function.</li>
+  </ul>
+  <p>The Twitch username and split file name are obtained from public sources (a posted link and therun.gg's public run data). A Twitch username may identify the runner, so we treat it as personal data and retain it only as described in <em>Data Retention</em> below.</p>
+  <p>The Bot does not collect message logs, member lists, presence data, or voice data, and does not use any privileged intents.</p>
+
+  <h2><span class="num">03</span> Why We Collect This Data</h2>
+  <ul>
+    <li><strong>Twitch / therun.gg usernames and split file names</strong> are required to provide the Bot's core function: finding and displaying a runner's live run, tracking which splits belong to each runner, and resuming runs in progress after the Bot restarts.</li>
+    <li><strong>Server and display configuration</strong> is required so the Bot knows where and how each server wants runs displayed.</li>
+  </ul>
+  <p>We do not use your data for advertising, profiling, or analytics, and we do not sell it.</p>
+
+  <h2><span class="num">04</span> Legal Basis for Processing (GDPR)</h2>
+  <p>For users in the EU, UK, and EEA, our legal basis for processing the above data is <strong>legitimate interest</strong>: the Bot needs this data to provide the functionality that a server has voluntarily chosen to use by adding the Bot and configuring it. Where configuration is supplied by a server administrator or user, that supply constitutes a deliberate request for the Bot to operate as configured.</p>
+  <p>You may object to this processing at any time (see <em>Your Rights</em> below).</p>
+
+  <h2><span class="num">05</span> Data Storage and Security</h2>
+  <ul>
+    <li>The Bot and its database run on <strong>private infrastructure located in France</strong>.</li>
+    <li>Connections between the Bot and both Discord and therun.gg are <strong>encrypted in transit</strong>.</li>
+    <li>Stored configuration runs on servers with <strong>encryption enabled</strong>.</li>
+    <li>Access to the infrastructure and the database is <strong>restricted to the operator only</strong>. The infrastructure is locked down and not accessible to any third party.</li>
+    <li>All supporting services used for operating the Bot (such as error monitoring) are <strong>self-hosted</strong> on the same private infrastructure.</li>
+  </ul>
+
+  <h2><span class="num">06</span> Data Retention</h2>
+  <ul>
+    <li><strong>Message content</strong> is not retained. It is processed in memory and discarded; any appearance in temporary debug logs is short-lived.</li>
+    <li><strong>Configuration data</strong> (Twitch/therun.gg usernames, split file names, and server/display settings) is retained while the Bot is in use by a server and is <strong>deleted within 30 days of the Bot being removed from that server</strong>.</li>
+    <li>A <strong>runner</strong> whose username and run data are displayed by the Bot may request removal of that data at any time, independently of whether the Bot remains in a server (see <em>Your Rights</em> below).</li>
+    <li>You may request earlier deletion at any time (see below).</li>
+  </ul>
+
+  <h2><span class="num">07</span> Data Sharing and Third Parties</h2>
+  <p>PacePal Bot shares data with only one third party:</p>
+  <ul>
+    <li><strong>therun.gg</strong> — the Bot queries therun.gg using the <strong>public Twitch username</strong> found in a link to look up run data. No Discord user data or other personal data is sent to therun.gg; only the public Twitch handle is used for the lookup. therun.gg's own handling of your data is governed by their <a href="https://therun.gg/privacy-policy">Privacy Policy</a>.</li>
+  </ul>
+  <p>No other third parties receive your data. All other supporting services are self-hosted. We do not use external analytics providers, external AI providers, or payment processors. The Bot is free and has no paid tier.</p>
+  <p>The public Twitch username processed by the Bot originates from a link posted in Discord; the Bot does not contact Twitch or send any data to it. Your use of Twitch is governed by Twitch's own <a href="https://legal.twitch.com/en/legal/privacy-notice/">Privacy Notice</a>.</p>
+  <p>The Bot necessarily operates on the Discord platform, and your use of Discord is governed by Discord's own <a href="https://discord.com/privacy/">Privacy Policy</a>.</p>
+
+  <h2><span class="num">08</span> Your Rights</h2>
+  <p>Depending on your location, you may have rights to access, correct, delete, or object to the processing of your data. You can:</p>
+  <ul>
+    <li><strong>Request a copy</strong> of the data we hold relating to you or your server.</li>
+    <li><strong>Request deletion</strong> of your data.</li>
+    <li><strong>Object to processing</strong> based on legitimate interest.</li>
+  </ul>
+  <p>To exercise any of these rights, contact <a href="mailto:franck+pacepal-bot@michea.dev">franck+pacepal-bot@michea.dev</a>. We currently handle these requests by email; there is no in-Bot deletion command at this time. We will respond within a reasonable period and in any case within the timeframes required by applicable law.</p>
+  <p>You can also stop the Bot from processing your data by removing it from your server, after which stored configuration is deleted within 30 days as described above.</p>
+  <p>If you are a <strong>runner</strong> whose username or run data is displayed by the Bot and you want it removed, contact <a href="mailto:franck+pacepal-bot@michea.dev">franck+pacepal-bot@michea.dev</a>. We will remove your username and associated run/split data from our configuration on request, regardless of whether the Bot remains in the server that added you.</p>
+
+  <h2><span class="num">09</span> Children's Privacy</h2>
+  <p>PacePal Bot is not intended for children under 13 (or the higher minimum digital-consent age in your country), consistent with Discord's Terms of Service. We do not knowingly collect data from children under this age. If you believe we have inadvertently collected such data, contact <a href="mailto:franck+pacepal-bot@michea.dev">franck+pacepal-bot@michea.dev</a> and we will delete it promptly.</p>
+
+  <h2><span class="num">10</span> Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. Significant changes may also be announced through the Bot's support channels. Continued use of the Bot after changes take effect constitutes acceptance of the updated policy.</p>
+
+  <h2><span class="num">11</span> Contact</h2>
+  <div class="contact-card">
+    <div class="k">Email</div>
+    <a href="mailto:franck+pacepal-bot@michea.dev">franck+pacepal-bot@michea.dev</a>
+  </div>
+
+  <footer>
+    PacePal Bot · Privacy Policy · Last updated 2026-06-24
+  </footer>
+</div>
+</body>
+</html>
